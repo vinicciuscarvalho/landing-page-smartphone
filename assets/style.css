@@ -1,0 +1,299 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Gyst';
+    src: url(fonts/gyst-regular.otf);
+}
+
+*, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+    width: 100%;
+}
+
+header {
+    display: flex; 
+    justify-content: space-between;
+    background-color: #285A9A;
+}
+
+
+header > h1 > a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Gyst', sans-serif;
+    
+}
+
+header > nav {
+    width: 40%;
+    margin: auto;
+    
+}
+
+nav {
+    display: flex;
+}
+
+nav > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: auto;
+    align-items: space-between;
+}
+
+header > button { 
+    background-color: rgba(1, 246, 205, 0.237);
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 25px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+header > button > a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#inicio {
+    background-color: rgb(40, 90, 154);
+    padding: 40px;
+}
+
+#inicio div {
+    width: 300px;
+    height: 15%;
+    padding: 20px;
+}
+
+#inicio > div > h2, #inicio > div > p {
+    text-align: justify;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+#inicio > div > button {
+    background-color: transparent;
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    border: none;
+    border-radius: 25px;
+    border: 2px solid rgb(255, 255, 255);
+}
+#inicio > div a {
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+
+#sobre {
+    background-color: white;
+    padding: 40px;
+    height: 450px;
+}
+
+#sobre > h2, #sobre > p {
+    text-align: left;
+    width: 40%;
+    padding: 20px;
+    padding-left: 70px;
+}
+
+
+#recursos {
+    background-color: rgb(56, 142, 255);
+    padding: 20px;
+    height: 250px;
+}
+#recursos > hr {
+    width: 20%;
+    margin: auto;
+}
+
+#recursos > h2 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+     
+
+
+}
+
+ #recursos > p {
+    text-align: center;
+    color: white;
+    padding: 10px;
+ }
+
+ #planos {
+    background-color: white;
+    padding: 20px;
+    height: 550px;
+ }
+
+ #planos > hr {
+    width: 20%;
+    margin: auto;
+ }
+
+ #planos > h2 {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+     /* Fazer o fundo desfocado */
+ }
+
+ #planos > p {
+    text-align: center;
+    padding: 10px;
+ }
+
+ #cards-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 15px;
+    
+ }
+
+ .cards {
+    background-color: lightcyan;
+    padding: 20px;
+    width: 25%;
+    border-radius: 15px;
+    background-color: #285A9A;
+
+ }
+
+ .cards > h3 {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+ }
+
+ .cards > p {
+    text-align: center;
+    padding: 10px;
+    color: white;
+
+ }
+ .cards > ul > li {
+    list-style: none;
+    padding: 5px;
+    font-size: 0.6rem;
+    text-align: center;
+    color:white
+
+ }
+
+ .cards .plano-sem-acesso {
+    text-decoration: line-through;
+    color: gray;
+ }
+ .cards > button {
+    /* desfocado */
+    margin: auto;
+    margin-top: 15px;
+    padding: 10px;
+    display: block;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+ }
+        
+footer {
+    background-color: rgb(10, 23, 41);
+    padding: 35px;
+    height: 250px;
+    color: white;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.div-footer {
+    width: 25%;
+}
+
+.div-footer > h2 {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+#redes-sociais > li {
+    display: inline;
+    margin-right: 5px;
+    list-style: none;
+    text-decoration: none;
+    
+
+}
+
+#redes-sociais > li > a > img {
+background-color: rgb(38, 54, 76);    
+border-radius: 50%;
+}
+
+.div-footer > address, .div-footer > p {
+    padding-bottom: 20px;
+    list-style: none;
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.div-footer > form > input {
+    padding: 10px;
+    width: 60%;
+    height: 08px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: rgb(60, 70, 82);
+    color: white;   
+}
+
+.div-footer > form > button {
+    padding: 6px;
+    margin: 8px;
+    
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(69, 80, 94);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+footer > hr {
+    width: 100%;
+    margin: auto;
+}
+
+footer > p {
+    text-align: right;
+    font-size: 0.8rem;
+    padding-top: 10px;
+}
+
+        
+        
