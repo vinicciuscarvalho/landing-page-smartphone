@@ -13,26 +13,29 @@
 }
 
 body {
-    background-color: lightgray;
+    background-color:wheat;
     width: 100%;
 }
 
 header {
     display: flex; 
-    justify-content: space-between;
-    background-color: #285A9A;
+    justify-content: space-around;
+    background-color: white;
 }
 
+header > h1 {
+    margin: auto;
+    padding: 0px;
+}
 
 header > h1 > a {
     display: block;
     text-decoration: none;
     padding: 20px;
-    color: white;
+    color: rgb(40, 90, 154);
     font-weight: bold;
     font-size: 1.5rem;
     font-family: 'Gyst', sans-serif;
-    
 }
 
 header > nav {
@@ -47,79 +50,194 @@ nav {
 
 nav > a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(40, 90, 154);
     padding: 10px;
     margin: auto;
     align-items: space-between;
 }
 
+header > nav > a:hover {
+    font-weight: bold;
+    transition: 0.5s;
+}
+
 header > button { 
-    background-color: rgba(1, 246, 205, 0.237);
-    margin: 10px;
+    background-color:rgb(40, 90, 154);
+    margin: auto;
     padding: 10px;
     width: 100px;
     border: none;
     border-radius: 25px;
-    border: 2px solid rgb(255, 255, 255);
+    
 }
 
 header > button > a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: white;
 }
+
+header > button:hover {
+    background-color: white;
+    border: 2px solid rgb(40, 90, 154);
+    transition: 0.1s;
+}
+
+header > button:hover > a {
+    color:rgb(40, 90, 154);
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+main {
+    margin: auto;
+    background-color: white;
+}
+
 
 #inicio {
+    width: auto;
+    height: auto;
     background-color: rgb(40, 90, 154);
-    padding: 40px;
-}
 
-#inicio div {
-    width: 300px;
-    height: 15%;
+    display: flex;
+    justify-content: space-around;
     padding: 20px;
+    margin: auto;
+
+
+    margin: 0px 50px 0px 50px;
+
+    border-radius: 30px;
 }
 
-#inicio > div > h2, #inicio > div > p {
-    text-align: justify;
+#inicio aside {
+    width: 40%;
+    height: auto;
+    padding: 2%;
+    margin: auto;
+}
+
+#texto-inicio {
+    padding-top: 35px;
+}
+
+#texto-inicio h2 span {
+    color: yellow;
+    font-family: 'gyst', sans-serif;
+    font-size: 1.3rem;
+}
+
+#inicio > aside > img {
+    width: 110%;
+    height: auto;
+    
+    display: block;
+}
+
+#inicio > aside > h2, #inicio > aside > p {
+    text-align: left;
     color: white;
+    font-size: 1.3rem;
+
+
     padding: 20px;
     width: 100%;
 }
 
-#inicio > div > button {
-    background-color: transparent;
-    margin: 10px;
-    padding: 5px;
+#inicio > aside > button {
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
     width: 100px;
     border: none;
-    border-radius: 25px;
-    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;border: 2px solid  white;
+;
 }
-#inicio > div a {
+#inicio > aside a {
     text-decoration: none;
     font-weight: 600;
+    color:  rgb(40, 90, 154);
+}
+
+#inicio > aside > button:hover {
+    background-color: rgb(40, 90, 154);
+    border: 2px solid white;
+    transition: 0.1s;
+}
+
+#inicio > aside > button:hover > a {
     color: white;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+#clientes {
+    background-color: white;
+    padding: 20px;
+
+}
+
+#clientes > h3 {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: black
+}
+
+#clientes aside {
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+    margin: auto;
+}
+
+#clientes aside > p > img {
+    display: block;
+    width: 45%;
+    height: auto;
+    margin: auto;
+
+    padding-top: 20px;
+
 }
 
 #sobre {
-    background-color: white;
-    padding: 40px;
-    height: 450px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    background-color: wheat;
+    padding: 30px;
+    margin: auto;
+    
 }
 
-#sobre > h2, #sobre > p {
+#sobre > aside {
     text-align: left;
-    width: 40%;
-    padding: 20px;
-    padding-left: 70px;
+    width: 70%;
+    margin: auto;
+    padding: 40px;
 }
 
+#sobre > aside > h2 {
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+#sobre .card-sobre {
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+}
 
 #recursos {
-    background-color: rgb(56, 142, 255);
+    background-color: #285a9a;
     padding: 20px;
     height: 250px;
 }
+
 #recursos > hr {
     width: 20%;
     margin: auto;
@@ -164,7 +282,7 @@ header > button > a {
     padding: 10px;
  }
 
- #cards-container {
+ #card-plano-container {
     display: flex;
     justify-content: space-around;
     padding: 20px;
@@ -172,7 +290,7 @@ header > button > a {
     
  }
 
- .cards {
+ .card-plano {
     background-color: lightcyan;
     padding: 20px;
     width: 25%;
@@ -181,20 +299,20 @@ header > button > a {
 
  }
 
- .cards > h3 {
+ .card-plano > h3 {
     text-align: center;
     font-weight: bold;
     padding: 10px;
     color: white;
  }
 
- .cards > p {
+ .card-plano > p {
     text-align: center;
     padding: 10px;
     color: white;
 
  }
- .cards > ul > li {
+ .card-plano > ul > li {
     list-style: none;
     padding: 5px;
     font-size: 0.6rem;
@@ -203,12 +321,11 @@ header > button > a {
 
  }
 
- .cards .plano-sem-acesso {
+ .card-plano .plano-sem-acesso {
     text-decoration: line-through;
     color: gray;
  }
- .cards > button {
-    /* desfocado */
+ .card-plano > button {
     margin: auto;
     margin-top: 15px;
     padding: 10px;
